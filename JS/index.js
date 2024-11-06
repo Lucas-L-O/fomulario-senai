@@ -124,3 +124,19 @@ function mascaraCEP(input) {
             document.body.classList.remove('dark-mode');
         }
     });
+
+    document.getElementById('email').addEventListener('input', function () {
+        const emailInput = this;
+        const emailError = document.getElementById('email-error');
+        
+        // Regex simples para validação de email (não é 100% perfeita, mas é adequada para a maioria dos casos)
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+        // Verifica se o email corresponde ao padrão
+        if (!emailPattern.test(emailInput.value)) {
+            emailError.style.display = 'inline';  // Exibe a mensagem de erro
+        } else {
+            emailError.style.display = 'none';  // Esconde a mensagem de erro
+        }
+    });
+    

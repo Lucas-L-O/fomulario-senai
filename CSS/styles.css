@@ -58,6 +58,7 @@ label {
 
 /* Estilo dos campos de entrada */
 input[type="text"],
+input[type="email"],
 input[type="date"],
 select {
     width: 100%;
@@ -71,6 +72,7 @@ select {
 
 /* Tema escuro */
 body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
 body.dark-mode input[type="date"],
 body.dark-mode select {
     background-color: #555;
@@ -80,6 +82,7 @@ body.dark-mode select {
 
 /* Efeito de foco nos campos de entrada */
 input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="date"]:focus,
 select:focus {
     border-color: #4caf50;
@@ -88,6 +91,7 @@ select:focus {
 
 /* Tema escuro */
 body.dark-mode input[type="text"]:focus,
+body.dark-mode input[type="email"]:focus,
 body.dark-mode input[type="date"]:focus,
 body.dark-mode select:focus {
     border-color: #80e27e;
